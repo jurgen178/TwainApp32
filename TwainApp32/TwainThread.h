@@ -1,8 +1,6 @@
 #pragma once
 #include "twainlib.h"
 
-
-
 // CTwainThread
 
 class CTwainThread : public CWinThread
@@ -26,7 +24,6 @@ public:
 
 protected:
 	DECLARE_MESSAGE_MAP()
-	//afx_msg void OnTransferReady(WPARAM wParam, LPARAM lParam);
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };
 

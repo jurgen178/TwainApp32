@@ -62,8 +62,6 @@ protected:
 	BOOL SetCapability(TW_CAPABILITY& twCap);
 	BOOL EnableSource(BOOL showUI = TRUE);
 
-	//int setData(TW_UINT16 cap, bool long_type, long l, double d);
-
 	BOOL GetImageInfo(TW_IMAGEINFO& info);
 
 	virtual BOOL DisableSource();
@@ -73,11 +71,9 @@ protected:
 	void TransferImage();
 	BOOL EndTransfer();
 	void CancelTransfer();
-	BOOL ShouldContinue();
 	BOOL GetImage(TW_IMAGEINFO& info);
 
 	virtual void SetImage(HANDLE hBitmap,TW_IMAGEINFO& info);
-//	virtual void CopyImage(HANDLE hBitmap,TW_IMAGEINFO& info);
 
 public:
 	CTwainThread* m_pThread;
@@ -100,6 +96,5 @@ protected:
 
 	int m_nImageCount;
 };
-
 
 #endif
